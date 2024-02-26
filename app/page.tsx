@@ -1,6 +1,6 @@
 import { getFrameMetadata } from "@coinbase/onchainkit";
 import type { Metadata } from "next";
-import { NEXT_PUBLIC_URL, NFT_ADDRESS } from "./config";
+import { NEXT_PUBLIC_URL } from "./config";
 
 export async function generateMetadata(): Promise<Metadata> {
   const frameMetadata = getFrameMetadata({
@@ -34,7 +34,10 @@ export default async function Page() {
       <div className="flex flex-col md:flex-row md:items-center justify-center min-h-screen items-start font-body">
         <div className="w-full md:w-1/4 flex flex-col items-center md:items-start space-y-4 mt-4 md:mt-0 md:pl-4">
           <div className="text-xs text-stone-400 hover:underline tracking-tighter text-center">
-            <a href="xxx" target="_blank">
+            <a
+              href="https://github.com/ZaK3939/Recast-Relay-Syndicate"
+              target="_blank"
+            >
               See code on Github
             </a>
           </div>
